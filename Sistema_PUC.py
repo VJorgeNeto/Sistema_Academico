@@ -1,31 +1,33 @@
 def menu_principal():
-    print("---- MENU PRINCIPAL ----\n"
-      "------------------------")
-    print("(1)  Gerenciar estudantes.\n"
-        "(2)  Gerenciar professores.\n"
-        "(3)  Gerenciar disciplinas\n"
-        "(4)  Gerenciar turmas.\n"
-        "(5)  Gerenciar matrículas.\n"
-        "(9)  Sair.\n"
-        " \n")
-    
-    opcao = input("informe a opção desejada: ")
+    opcao = ''
+    while opcao != '9':
+        print("---- MENU PRINCIPAL ----\n"
+        "------------------------")
+        print("(1)  Gerenciar estudantes.\n"
+            "(2)  Gerenciar professores.\n"
+            "(3)  Gerenciar disciplinas\n"
+            "(4)  Gerenciar turmas.\n"
+            "(5)  Gerenciar matrículas.\n"
+            "(9)  Sair.\n"
+            " \n")
+        
+        opcao = input("informe a opção desejada: ")
 
-    if opcao == "1":
-        menu_operacoes_1()
-    elif opcao == "2":
-        menu_operacoes_2()
-    elif opcao == "3":
-        menu_operacoes_3()
-    elif opcao == "4":
-        menu_operacoes_4()
-    elif opcao == "5":
-        menu_operacoes_5()
-    elif opcao == "9":
-        print("Finalizando aplicação...")
-    else:
-        print("Informe uma opção válida!")
-        menu_principal()
+        if opcao == "1":
+            menu_operacoes_1()
+        elif opcao == "2":
+            menu_operacoes_2()
+        elif opcao == "3":
+            menu_operacoes_3()
+        elif opcao == "4":
+            menu_operacoes_4()
+        elif opcao == "5":
+            menu_operacoes_5()
+        elif opcao == "9":
+            print("Finalizando aplicação...")
+        else:
+            print("Informe uma opção válida!")
+            menu_principal()
 
 def menu_operacoes_1():
     print("***** [ESTUDANTES] MENU DE OPERAÇÕES *****\n"
